@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 
 # Load Dataset
 model_id = "https://drive.google.com/uc?id=1kFC6FezB-1DncseIjeka-4w13g2iNB4l"
-url = f"https://drive.google.com/uc?id={file_id}"
+url = f"https://drive.google.com/uc?id=1RCZShB5ohy1HdU-mogcP16TbeVv9txpY"
 df = pd.read_csv(url)
 
 # Tokenizer (Scratch)
