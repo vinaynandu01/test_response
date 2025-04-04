@@ -132,14 +132,14 @@ model_bytes = io.BytesIO(response.content)
 
 
 # Load Model
-def load_model(model):
+def load_model(model,model_bytes):
     
-    model.load_state_dict(torch.load(path, map_location=device))
+    model.load_state_dict(torch.load(model_bytes, map_location=device))
     model.to(device)
     model.eval()
     print("Model loaded from", path)
 
-load_model(model)
+load_model(model,model_bytes)
 
 # Generate Response
 def generate_response(model, query, max_length=200):
